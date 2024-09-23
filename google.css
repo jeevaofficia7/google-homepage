@@ -1,0 +1,238 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*----------Naviagtion -------------------------------*/
+
+nav {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  font-size: 15px;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+
+nav .menus {
+  list-style-type: none;
+  display: flex;
+  position: relative;
+  top: 20px;
+  left: 980px;
+}
+
+nav .menus li {
+  padding: 0px 8px;
+}
+
+.menus li a {
+  text-decoration: none;
+  color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+nav .menus2 {
+  list-style-type: none;
+  position: absolute;
+  left: 10px;
+  top: 20px;
+}
+
+nav .menus2 li {
+  display: inline-block;
+  padding: 0px 8px;
+}
+
+nav .menus2 li a {
+  text-decoration: none;
+  color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.menus .in {
+  background-color: rgb(78, 146, 224);
+  padding: 5px 8px;
+  font-size: 16px;
+  border-radius: 3px;
+  color: white;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+/*------------Google icon---------------------------*/
+
+.g-container2 .g-icon {
+  position: absolute;
+  top: 70px;
+  right: 540px;
+}
+
+.g-container2 .buttons {
+  position: absolute;
+  top: 260px;
+  left: 530px;
+  outline: none;
+}
+.g-container2 .buttons button {
+  padding: 10px 20px;
+  margin: 8px;
+  border: none;
+  font-size: 14px;
+  background-color: #f8f9fa;
+}
+
+.g-container2 .buttons a {
+  text-decoration: none;
+  color: black;
+}
+
+/*----------Google offered langauages-------------------------------*/
+
+.g-container2 .languages {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 340px;
+  left: 438px;
+  font-size: 13px;
+}
+
+.g-container2 .languages li {
+  display: inline-block;
+  padding: 0px 2px;
+}
+
+.g-container2 .languages li a {
+  text-decoration: none;
+  color: blue;
+}
+
+.g-container2 .buttons button:hover {
+  background-color: darkgray;
+}
+
+/*------FOOTER-----------------------------*/
+
+footer .downside-nav {
+  display: flex;
+  position: relative;
+  top: 530px;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(27, 27, 27);
+  height: 50px;
+  font-size: 15px;
+}
+
+footer .downside-nav .firstrow {
+  display: flex;
+  list-style-type: none;
+  position: relative;
+  right: 110px;
+}
+
+footer .downside-nav .firstrow li {
+  padding: 0px 20px;
+}
+
+footer .downside-nav .secondrow {
+  list-style-type: none;
+  display: flex;
+  position: relative;
+  left: 50px;
+}
+
+footer .downside-nav .secondrow li {
+  padding: 0px 20px;
+}
+
+/*-----downside nav remove text decoration-------------------------------*/
+
+footer .downside-nav .firstrow li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+footer .downside-nav .secondrow li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.searchbox {
+  position: relative;
+  top: 180px;
+  left: 385px;
+  background-color: rgb(255, 255, 255);
+  display: inline-block;
+  width: 600px;
+  height: 52px;
+  border-radius: 30px;
+  border: 1px solid lightgray;
+}
+
+.searchbox .search {
+  background-color: rgb(36, 34, 34);
+  position: absolute;
+  left: 0px;
+  height: 50px;
+  width: 0px;
+  outline: none;
+  padding: 10px 33px;
+  font-size: 17px;
+  top: 0px;
+  color: rgb(255, 255, 255);
+  display: inline-block;
+  border: none;
+  border-radius: 40px;
+}
+
+.goo {
+  position: absolute;
+  top: 10px;
+  font-size: 25px;
+  left: 17px;
+  color: rgb(0, 81, 255);
+  filter: grayscale(100%);
+}
+
+.fa-microphone {
+  position: absolute;
+  top: 17px;
+  font-size: 20px;
+  right: 18px;
+  color: rgb(0, 0, 0);
+}
+
+.fa-keyboard {
+  position: absolute;
+  top: 18px;
+  right: 50px;
+  font-size: 17px;
+  color: rgb(0, 0, 0);
+}
+
+.searchbox:hover .search {
+  transition: all 2s ease-in;
+  border: 1px solid rgb(0, 0, 0);
+  width: 600px;
+  cursor: pointer;
+
+  padding: 0px 200px;
+}
+
+.searchbox:hover {
+  cursor: pointer;
+}
+
+.searchbox:hover .goo {
+  transform: rotateX(0deg) rotateY(0deg) rotateZ(1080deg);
+  transition: all 2s ease-in;
+  filter: grayscale(0);
+  position: relative;
+}
